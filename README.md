@@ -20,7 +20,7 @@ docker pull mongo
 ```
 
 4. Create a container from mongo image downloaded in the previous step, execute following command (all in one line): 
-``Shell
+```Shell
 docker run -d -p 27017-27019:27017-27019 --name mymongo -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=secret mongo
 ```
 
@@ -28,7 +28,7 @@ docker run -d -p 27017-27019:27017-27019 --name mymongo -e MONGO_INITDB_ROOT_USE
 6. Create .env file in the project root folder, this file is used in development environment to inject values to environment variables. Don't upload this file to repository or the docker image, since this file has sensitive information, 
 The .env file types have been added to both the .gitignore and the .dockerignore files. The content of the .env file mus be
 
-```YAML
+```yaml
 MONGO_HOST=127.0.0.1
 MONGO_URI=mongodb://mongoadmin:secret@localhost:27017?authMechanism=SCRAM-SHA-1&authSource=admin
 MONGO_DB=apidb
