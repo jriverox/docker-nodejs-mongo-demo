@@ -10,7 +10,7 @@
 ### Steps to create docker images and running the project in a docker container
 1. Open working folder in the terminal
 2. Download npm packages executing following command: 
-``Shell
+```Shell
 npm install
 ```
 
@@ -72,7 +72,7 @@ docker stop mymongo
 ```
 
 ### Starting container (in case they are stopped. Both containers must exist and must be stopped )
-``` shell
+```shell
 docker start my-service-container
 ```
 
