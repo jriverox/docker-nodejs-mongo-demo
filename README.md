@@ -15,7 +15,7 @@ npm install
 ```
 
 3. Download docker image from docker hub, executing the command: 
-``Shell
+```Shell
 docker pull mongo
 ```
 
@@ -51,7 +51,7 @@ docker image ls
 ```
 
 10. generate a container from the docker image created in the previous step, use the following commnad (all in one line): 
-```
+```shell
 docker run -d -p 3000:3000 --name my-service-container --link mymongo:mymongo -e MONGO_HOST=mymongo -e MONGO_URI="mongodb://mongoadmin:secret@localhost:27017?authMechanism=SCRAM-SHA-1&authSource=admin" -e MONGO_DB=apidb -e PORT=3000 my-service
 ```
 
