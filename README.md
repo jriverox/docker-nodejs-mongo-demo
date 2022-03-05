@@ -1,6 +1,8 @@
 # docker-nodejs-mongo-demo
 ## Simple Service demo using nodejs + express + mongodb, deployed on Docker (Service and Mongodb)
 
+This repository was used for teaching purposes and shared the knowledge.
+
 ### Requirements
 1. Nodejs
 2. Docker
